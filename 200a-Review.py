@@ -67,7 +67,10 @@ def getMerge(list1,list2):
     # if the list2 element is in list1, add it at the position where it occurs in list1
     # if the list2 element is not in list1, add it to the end
     merge = list1.copy()
-    if list[1]
+    for i in range(0,len(list1)):
+        for n in range(0,len(list2)):
+            if list1[i] == list[n]:
+                merge.insert(i,list1[n])
     return merge
 
 
